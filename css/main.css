@@ -48,7 +48,7 @@ h1 {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-image: url("../images/default.jpg");
+  background-image: url("../images/mhls1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -62,10 +62,35 @@ h1 {
 }
 .title {
   text-align: center;
-  top: 40%;
+  top: 20%;
   width: 100%;
   position: absolute;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+#splash {
+  color: yellow;
+  font-weight: bold;
+  font-style: italic;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  position: fixed;
+  transform: rotate(-30deg);
+  right: 48%;
+  bottom: 25%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  
+}
+@keyframes pulse {
+  0% {
+      font-size: 20px;
+  }
+  50% {
+      font-size: 25px;
+  }
+  100% {
+      font-size: 20px;
+  }
 }
 .under-nav {
   left: 0;
